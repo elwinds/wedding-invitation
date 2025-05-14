@@ -1,0 +1,68 @@
+﻿
+/* Regular Text*/
+@font-face {
+    font-family: 'CormorantInfant';
+    src: url('../../public/fonts/CormorantInfant-Regular.ttf') format('truetype');
+    font-weight: 400;
+    /* normal */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Regular Light Text*/
+@font-face {
+    font-family: 'CormorantInfant-Light';
+    src: url('../../public/fonts/CormorantInfant-Light.ttf') format('truetype');
+    // font-weight: 400;
+    /* normal */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold Text*/
+@font-face {
+    font-family: 'CormorantInfant-Bold';
+    src: url('../../public/fonts/CormorantInfant-Bold.ttf') format('truetype');
+    font-weight: 700;
+    /* bold */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Italic Text */
+@font-face {
+    font-family: 'CormorantInfant-Italic';
+    src: url('../../public/fonts/CormorantInfant-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* Le Jardin */
+@font-face {
+    font-family: 'LeJardin';
+    src: url('../../public/fonts/Le-Jardin-Regular.otf') format('truetype');
+    font-display: swap;
+}
+
+
+* {
+    font-family: 'CormorantInfant', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}

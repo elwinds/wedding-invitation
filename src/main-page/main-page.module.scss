@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+}
+
+.top {
+    background: url('../../public/images/upl8307.png') no-repeat top;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    background: url('../../public/images/upl8312.png');
+    background-size: 428px;
+    padding: 70px 0; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    background: rgba(255, 255, 255, 0.86);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+
+    @media (max-width: 480px) {
+        width: 80%;
+    }
+}

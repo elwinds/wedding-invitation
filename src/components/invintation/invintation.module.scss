@@ -1,0 +1,55 @@
+﻿
+@import '../../styles/variables.scss';
+.container {
+    padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 3rem) 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.title {
+    letter-spacing: 2px;
+    font-size: 20.5548pt;
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    line-height: 1.4;
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+
+    &::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: $goldColor;
+            margin: 0.8rem auto 0;
+        }
+}
+
+.text {
+    text-align: center;
+    line-height: 1.4;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    max-width: 800px;
+    padding: 0 clamp(0.5rem, 3vw, 2rem);
+}
+
+.imageWrapper {
+    width: 100%;
+    margin: clamp(1rem, 3vw, 2rem) 0;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    border-radius: 200px;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    
+    @media (max-width: 480px) {
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+        width: 100%;
+    }
+}

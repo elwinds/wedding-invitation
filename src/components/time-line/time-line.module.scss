@@ -1,0 +1,102 @@
+﻿@import '../../styles/variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+        line-height: 1.4;
+        letter-spacing: 0.5px;
+        margin-bottom: clamp(1rem, 3vw, 2rem);
+        color: $lightBlackColor;
+        position: relative;
+    
+        &::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: $goldColor;
+            margin: 0.8rem auto 0;
+        }
+}
+
+.timeline {
+    position: relative;
+    width: 90%;
+    padding: 0 1rem;
+}
+
+.verticalLine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: $goldColor;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        left: 30px;
+        transform: none;
+    }
+}
+
+.event {
+    width: calc(50% - 40px);
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+
+    &.left {
+        margin-right: auto;
+        text-align: right;
+        padding-right: 40px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: left;
+            padding-right: 0;
+            padding-left: 100px;
+        }
+    }
+
+    &.right {
+        margin-left: auto;
+        text-align: left;
+        padding-left: 40px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding-left: 100px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .event {
+        margin-bottom: 1.5rem;
+
+        &.left,
+        &.right {
+            padding-left: 60px;
+        }
+    }
+
+    .verticalLine {
+        left: 25px;
+    }
+}

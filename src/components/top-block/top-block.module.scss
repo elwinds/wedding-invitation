@@ -1,0 +1,124 @@
+﻿
+@import '../../styles/variables.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $lightBlackColor;
+    width: 70%;
+
+    @media (max-width: 480px) {
+        width: 80%;
+    }
+}
+
+.content {
+    text-align: center;
+    width: 100%;
+    padding: 3rem;
+    background-color: $whiteColor;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    font-family: CormorantInfant-Light;
+    line-height: 3rem;
+
+    @media (max-width: 480px) {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+.text {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    text-align: center;
+    font-family: LeJardin;
+    font-weight: 400;
+    color: $goldColor;
+    font-style: italic;
+    margin-top: 3rem;
+
+    @media (max-width: 480px) {
+        margin-top: 1.5rem;
+    }
+}
+
+.invitationText {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+
+    @media (max-width: 480px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.divider {
+    height: 1px;
+    margin: 2rem auto;
+    width: 60%;
+}
+
+.date {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+
+    @media (max-width: 480px) {
+        letter-spacing: 1px;
+    }
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        gap: 0.8rem;
+    }
+    
+    @media (max-width: 480px) {
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+}
+
+.countdownItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+    
+    @media (max-width: 480px) {
+        min-width: 50px;
+    }
+}
+
+.countdownNumber {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: bold;
+
+    @media (max-width: 480px) {
+        font-size: 1.3rem;
+    }
+}
+
+.countdownLabel {
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+
+    @media (max-width: 480px) {
+        font-size: 0.6rem;
+    }
+}
