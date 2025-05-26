@@ -25,14 +25,15 @@ const MainPage = () => {
           <TimeLine />
           <Detail title={DETAILS.GIFT.TITLE} text={DETAILS.GIFT.TEXT} />
           <Detail title={DETAILS.CHILDREN.TITLE} text={DETAILS.CHILDREN.TEXT} />
-          <Detail
-            title={DETAILS.CONFRIRMATION.TITLE}
-            text={DETAILS.CONFRIRMATION.TEXT}
-          />
+
           <Detail
             title={DETAILS.PHOTO.TITLE}
             text={DETAILS.PHOTO.TEXT}
             details={DETAILS.PHOTO.DETAILS}
+          />
+          <Detail
+            title={DETAILS.CONFRIRMATION.TITLE}
+            text={DETAILS.CONFRIRMATION.TEXT}
           />
           <DressCode />
         </div>

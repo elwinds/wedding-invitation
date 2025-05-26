@@ -88,7 +88,7 @@
     color: $lightBlackColor;
     text-wrap: wrap;
     margin: 0.3rem 0 0;
-    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    font-size: clamp(1rem, 2.2vw, 1.1rem);
     font-weight: 500;
     line-height: 1.4;
 }
@@ -99,6 +99,6 @@
     }
 
     .text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
